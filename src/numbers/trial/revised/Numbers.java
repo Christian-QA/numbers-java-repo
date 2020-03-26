@@ -52,11 +52,11 @@ public class Numbers {
 
 			String digit3Word = wordForm.numToWordConverter(digit[2]);
 
-			if (digit[0] > 0) {
+			if (digit[0] > 0 || digit[1] > 0) {
 				wordNumberHundreds = digit3Word + "-hundred and ";
 				digitCount++;
 			} else {
-				wordNumberThousands = digit3Word + "-hundred";
+				wordNumberHundreds = digit3Word + "-hundred ";
 				digitCount += 2;
 			}
 		}
