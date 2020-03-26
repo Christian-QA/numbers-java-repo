@@ -1,4 +1,4 @@
-package numbers.trial.exerc3;
+package numbers.trial.revised;
 
 public class Numbers {
 
@@ -52,11 +52,11 @@ public class Numbers {
 
 			String digit3Word = wordForm.numToWordConverter(digit[2]);
 
-			if (digit[0] > 0 || digit[1] > 0) {
+			if (digit[0] > 0) {
 				wordNumberHundreds = digit3Word + "-hundred and ";
 				digitCount++;
 			} else {
-				wordNumberHundreds = digit3Word + "-hundred ";
+				wordNumberThousands = digit3Word + "-hundred";
 				digitCount += 2;
 			}
 		}
@@ -68,7 +68,7 @@ public class Numbers {
 				wordNumberThousands = digit4Word + "-thousand and ";
 				digitCount += 2;
 			} else {
-				wordNumberThousands = digit4Word + "-thousand ";
+				wordNumberThousands = digit4Word + "-thousand";
 				digitCount += 2;
 			}
 		} else if (digit[3] > 0 && digit[2] > 0) {

@@ -4,7 +4,7 @@ public class Runner {
 
 	public static void main(String args[]) {
 
-		int numberToCheck = 14;
+		int numberToCheck = 9660;
 
 		Numbers number = new Numbers();
 		System.out.println(number.input(numberToCheck));
